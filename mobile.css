@@ -1,0 +1,2243 @@
+
+/* =====================================================
+   MOBILE CSS
+===================================================== */
+
+
+/* =====================================================
+   MOBILE - 760px
+===================================================== */
+
+@media (max-width: 760px) {
+
+    /* ================= NAVBAR ================= */
+
+    .navbar {
+        min-height: 65px;
+        padding: 0 3%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .brand {
+        gap: 9px;
+        flex-shrink: 1;
+        min-width: 0;
+    }
+
+    .brand-logo {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+    }
+
+    .brand-text h2 {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .brand-text p {
+        font-size: 8px;
+    }
+
+
+    /* ================= NAV BUTTONS ================= */
+
+    .nav-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 5px;
+        flex-shrink: 0;
+        flex-wrap: nowrap;
+    }
+
+
+    /* ================= MOBILE MENU ================= */
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        padding: 0;
+        border: none;
+        background: transparent;
+        color: #12395d;
+        font-size: 20px;
+        flex-shrink: 0;
+        cursor: pointer;
+    }
+
+
+    /* ================= CALL BUTTON ================= */
+
+    .call-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        flex-shrink: 0;
+    }
+
+
+    /* ================= BOOK TOKEN ================= */
+
+    .nav-book {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 36px;
+        padding: 0 9px;
+        font-size: 10px;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .nav-book span {
+        font-size: 10px;
+    }
+
+
+    /* ================= MOBILE MENU OPEN ================= */
+
+    .navigation.show-menu {
+        display: flex;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        padding: 15px 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+        z-index: 9999;
+    }
+
+    .navigation.show-menu a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        width: 100%;
+        min-height: auto;
+        padding: 25px 0 80px;
+        overflow: hidden;
+    }
+
+    .hero-container {
+        width: 94%;
+        min-height: 390px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .hero-left {
+        width: 57%;
+        text-align: left;
+        padding-top: 0;
+        position: relative;
+        z-index: 3;
+    }
+
+    .hero-left h1 {
+        font-size: 30px;
+        line-height: 1.08;
+        margin-bottom: 12px;
+    }
+
+    .hero-description {
+        width: 100%;
+        font-size: 11px;
+        line-height: 1.45;
+    }
+
+    .hero-buttons {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin-top: 14px;
+    }
+
+    .hero-buttons a {
+        min-height: 40px;
+        padding: 0 10px;
+        font-size: 10px;
+    }
+
+    .features {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin-top: 12px;
+    }
+
+    .feature {
+        font-size: 9px;
+    }
+
+
+    /* ================= DOCTOR IMAGE ================= */
+
+    .hero-right {
+        width: 43%;
+        height: 310px;
+        margin-top: 0;
+        position: relative;
+        flex-shrink: 0;
+        z-index: 2;
+    }
+
+    .doctor-bg {
+        width: 220px;
+        height: 220px;
+        right: -45px;
+        top: 38px;
+        transform: none;
+    }
+
+    .blue-circle {
+        width: 175px;
+        height: 175px;
+    }
+
+    .doctor-image {
+        height: 290px;
+        right: -18px;
+        bottom: 0;
+        transform: none;
+        max-width: none;
+    }
+
+    .healthy-life {
+        right: -3px;
+        top: 18px;
+        padding: 7px 9px;
+        font-size: 9px;
+        z-index: 5;
+        white-space: nowrap;
+    }
+
+
+    /* ================= STATS ================= */
+
+    .stats {
+    width: 92%;
+    height: 100px;
+    bottom: -30px;
+    transform: translateX(-50%) translateY(25px);
+    z-index: 999;
+    }
+
+    .stat-item {
+        height: 45px;
+    }
+
+
+    /* ================= WHY CHOOSE US ================= */
+
+    .why-section {
+        width: 100%;
+        margin-top: 80px;
+        padding: 0 5%;
+    }
+
+    .why-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ================= PREMIUM WHY ================= */
+
+    .why-choose-section {
+        width: 100%;
+        padding: 65px 5%;
+        overflow: hidden;
+    }
+
+    .premium-section-title {
+        margin-bottom: 35px;
+    }
+
+    .premium-section-title h2 {
+        font-size: 32px;
+    }
+
+    .premium-benefit-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ================= HOW IT WORKS ================= */
+
+    .how-it-works {
+        width: 100%;
+        padding: 65px 5%;
+        overflow: hidden;
+    }
+
+    .how-title {
+        margin-bottom: 50px;
+    }
+
+    .how-title h2 {
+        font-size: 32px;
+    }
+
+    .steps-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .steps-container::before {
+        display: none;
+    }
+
+
+    /* ================= QUEUE SECTION ================= */
+
+    .queue-section {
+        width: 100%;
+        padding: 20px 12px;
+        overflow: hidden;
+    }
+
+    .queue-box {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .queue-box h2 {
+        font-size: 20px;
+        margin: 0 0 5px;
+    }
+
+    .queue-box h3 {
+        font-size: 16px;
+        margin: 0 0 4px;
+    }
+
+    .queue-box p {
+        font-size: 12px;
+        line-height: 1.3;
+        margin: 0 0 4px;
+    }
+
+
+    /* ================= CLINIC EXPERIENCE ================= */
+
+    .clinic-experience {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 35px;
+        margin: 55px auto;
+    }
+
+    .clinic-photo {
+        height: 300px;
+    }
+
+
+    /* ================= SERVICES ================= */
+
+    .services-title {
+        margin-top: 30px;
+        padding-bottom: 35px;
+    }
+
+    .services-title h2 {
+        font-size: 22px;
+    }
+
+
+    /* ================= LOCATION ================= */
+
+    .location-section {
+        width: 100%;
+        padding: 50px 5%;
+        overflow: hidden;
+    }
+
+    .location-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .location-info h2 {
+        font-size: 32px;
+    }
+
+    .map-box {
+        height: 300px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .premium-footer {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .footer-container {
+        width: 90%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-column {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    /* ================= SAFETY ================= */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden !important;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE - 480px
+===================================================== */
+
+@media (max-width: 480px) {
+
+    /* ================= NAVBAR ================= */
+
+    .navbar {
+        padding: 0 3%;
+    }
+
+    .brand {
+        gap: 7px;
+    }
+
+    .brand-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-text h2 {
+        font-size: 12px;
+    }
+
+    .brand-text p {
+        font-size: 7px;
+    }
+
+    .nav-buttons {
+        gap: 4px;
+    }
+
+    .mobile-menu {
+        width: 32px;
+        height: 32px;
+        font-size: 19px;
+    }
+
+    .call-button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .nav-book {
+        height: 35px;
+        padding: 0 8px;
+        font-size: 9px;
+    }
+
+    .nav-book span {
+        font-size: 9px;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        padding-top: 22px;
+        padding-bottom: 75px;
+    }
+
+    .hero-container {
+        width: 95%;
+        min-height: 355px;
+    }
+
+    .hero-left {
+        width: 57%;
+    }
+
+    .hero-left h1 {
+        font-size: 27px;
+        line-height: 1.08;
+    }
+
+    .hero-description {
+        font-size: 10.5px;
+        line-height: 1.4;
+    }
+
+    .hero-buttons {
+        gap: 6px;
+        margin-top: 12px;
+    }
+
+    .hero-buttons a {
+        min-width: 0;
+        min-height: 38px;
+        padding: 0 8px;
+        font-size: 9px;
+    }
+
+    .features {
+        gap: 6px;
+        margin-top: 10px;
+    }
+
+    .feature {
+        font-size: 8.5px;
+    }
+
+
+    /* ================= DOCTOR ================= */
+
+    .hero-right {
+        width: 43%;
+        height: 290px;
+    }
+
+    .doctor-bg {
+        width: 205px;
+        height: 205px;
+        right: -35px;
+        top: 35px;
+    }
+
+    .blue-circle {
+        width: 160px;
+        height: 160px;
+    }
+
+    .doctor-image {
+        height: 275px;
+        right: -14px;
+    }
+
+    .healthy-life {
+        right: -5px;
+        top: 18px;
+        padding: 6px 8px;
+        font-size: 8.5px;
+    }
+
+
+    /* ================= STATS ================= */
+
+    .stats {
+        width: 92%;
+        height: 100px;
+        bottom: -30px;
+    }
+
+    .stat-item {
+        height: 42px;
+    }
+
+
+    /* ================= WHY / OTHER SECTIONS ================= */
+
+    .why-section {
+        margin-top: 75px;
+    }
+
+    .premium-section-title h2,
+    .how-title h2 {
+        font-size: 28px;
+    }
+
+    .current-token h1 {
+        font-size: 55px;
+    }
+
+    .map-box {
+        height: 280px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE - 360px
+===================================================== */
+
+@media (max-width: 360px) {
+
+    /* ================= NAVBAR ================= */
+
+    .navbar {
+        padding: 0 3%;
+    }
+
+    .brand {
+        gap: 6px;
+    }
+
+    .brand-logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    .brand-text h2 {
+        font-size: 11px;
+    }
+
+    .brand-text p {
+        font-size: 6.5px;
+    }
+
+    .nav-buttons {
+        gap: 3px;
+    }
+
+    .mobile-menu {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .call-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-book {
+        height: 33px;
+        padding: 0 6px;
+        font-size: 8px;
+    }
+
+    .nav-book span {
+        font-size: 8px;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+
+    .hero-container {
+        width: 96%;
+        min-height: 325px;
+    }
+
+    .hero-left {
+        width: 58%;
+    }
+
+    .hero-left h1 {
+        font-size: 23px;
+        line-height: 1.08;
+    }
+
+    .hero-description {
+        font-size: 9.5px;
+        line-height: 1.35;
+    }
+
+    .hero-buttons {
+        gap: 5px;
+    }
+
+    .hero-buttons a {
+        min-height: 35px;
+        padding: 0 6px;
+        font-size: 8.5px;
+    }
+
+    .features {
+        gap: 5px;
+    }
+
+    .feature {
+        font-size: 7.5px;
+    }
+
+
+    /* ================= DOCTOR ================= */
+
+    .hero-right {
+        width: 42%;
+        height: 265px;
+    }
+
+    .doctor-bg {
+        width: 180px;
+        height: 180px;
+        right: -25px;
+        top: 35px;
+    }
+
+    .blue-circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .doctor-image {
+        height: 250px;
+        right: -9px;
+    }
+
+    .healthy-life {
+        right: -4px;
+        top: 14px;
+        padding: 5px 6px;
+        font-size: 7.5px;
+    }
+
+
+    /* ================= STATS ================= */
+
+    .stats {
+        width: 94%;
+        height: 92px;
+        bottom: -28px;
+    }
+
+    .stat-item {
+        height: 40px;
+    }
+
+
+    /* ================= OTHER SECTIONS ================= */
+
+    .why-section {
+        margin-top: 70px;
+    }
+
+    .premium-section-title h2,
+    .how-title h2 {
+        font-size: 25px;
+    }
+
+    .current-token h1 {
+        font-size: 48px;
+    }
+
+}
+
+/* ================================
+  home page  LIVE QUEUE - MOBILE FIX
+================================ */
+
+ @media (max-width: 760px) {
+
+    .queue-section {
+        width: 100%;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        overflow: visible;
+    }
+
+    .queue-section .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .queue-box {
+        width: 100%;
+        padding: 18px 12px;
+        box-sizing: border-box;
+        overflow: visible;
+    }
+
+    .queue-intro {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .queue-intro h2 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .queue-intro p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .current-token {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        overflow: visible;
+        margin: 15px 0;
+    }
+
+    .current-token h1 {
+        font-size: 55px;
+        line-height: 1.1;
+        margin: 5px 0 8px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .queue-information {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .queue-information > div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media screen and (max-width: 400px) {
+
+    .queue-section {
+        padding: 18px 8px !important;
+    }
+
+    .queue-box {
+        padding: 14px 10px !important;
+    }
+
+    .queue-box h2 {
+        font-size: 18px !important;
+    }
+
+    .queue-box h3 {
+        font-size: 14px !important;
+    }
+
+    .queue-box p {
+        font-size: 11px !important;
+        line-height: 1.5 !important;
+    }
+}
+
+
+/* =====================================================
+   ABOUT PAGE - MOBILE RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* ABOUT SECTION */
+    .about-main {
+        min-height: auto;
+        padding: 55px 0;
+    }
+
+    .about-main .container {
+        width: 90%;
+    }
+
+    .about-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .small-title {
+        font-size: 10px;
+        letter-spacing: 1.4px;
+        margin-bottom: 12px;
+    }
+
+    .about-content h2 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .title-line {
+        width: 38px;
+        margin: 11px 0 8px;
+    }
+
+    .about-content h4 {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+        line-height: 1.75;
+        margin-bottom: 14px;
+    }
+
+
+    /* PROFILE BOX */
+    .profile-box {
+        width: 100%;
+        padding: 24px 20px;
+        border-radius: 16px;
+    }
+
+    .profile-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .profile-box h3 {
+        font-size: 19px;
+        margin-bottom: 17px;
+    }
+
+    .profile-row {
+        padding: 12px 0;
+    }
+
+    .profile-row span {
+        font-size: 9px;
+    }
+
+    .profile-row strong {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .profile-button {
+        margin-top: 18px;
+        padding: 13px 15px;
+        font-size: 13px;
+    }
+
+
+    /* =================================================
+       PROFESSIONAL JOURNEY
+    ================================================= */
+
+    .journey-section {
+        padding: 60px 0;
+    }
+
+    .journey-section .container {
+        width: 90%;
+    }
+
+    .journey-header {
+        margin-bottom: 35px;
+    }
+
+    .journey-label {
+        font-size: 10px;
+        letter-spacing: 1.4px;
+    }
+
+    .journey-header h2 {
+        font-size: 27px;
+        line-height: 1.3;
+    }
+
+    .journey-header p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .journey-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .journey-intro {
+        padding: 28px 22px;
+        border-radius: 16px;
+    }
+
+    .journey-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 18px;
+        font-size: 19px;
+    }
+
+    .journey-intro h3 {
+        font-size: 22px;
+        line-height: 1.35;
+    }
+
+    .journey-intro > p {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .journey-line {
+        margin: 21px 0 17px;
+    }
+
+    .journey-badge {
+        font-size: 11px;
+        padding: 7px 11px;
+    }
+
+
+    /* JOURNEY CONTENT */
+    .journey-content {
+        padding: 5px 20px;
+        border-radius: 16px;
+    }
+
+    .journey-item {
+        grid-template-columns: 40px 1fr;
+        gap: 14px;
+        padding: 20px 0;
+    }
+
+    .journey-number {
+        width: 39px;
+        height: 39px;
+        font-size: 10px;
+    }
+
+    .journey-text h4 {
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+
+    .journey-text p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /* =================================================
+       PROFESSIONAL SECTION
+    ================================================= */
+
+    .professional-section {
+        padding: 60px 5%;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading > span {
+        font-size: 10px;
+        letter-spacing: 1.3px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .section-heading p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .professional-cards {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .professional-card {
+        padding: 27px 20px;
+    }
+
+    .professional-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 19px;
+    }
+
+    .professional-card h3 {
+        font-size: 16px;
+    }
+
+    .professional-card p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /* =================================================
+       MISSION SECTION
+    ================================================= */
+
+    .mission-section {
+        padding: 60px 5%;
+    }
+
+    .mission-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mission-content h2 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .mission-content > p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .mission-points {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .mission-points div {
+        font-size: 13px;
+    }
+
+    .mission-box {
+        width: 100%;
+        padding: 35px 25px;
+        border-radius: 16px;
+    }
+
+    .mission-box > i {
+        font-size: 34px;
+    }
+
+    .mission-box h3 {
+        font-size: 22px;
+    }
+
+    .mission-box p {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+
+    /* =================================================
+       CTA
+    ================================================= */
+
+    .about-cta {
+        padding: 55px 5%;
+    }
+
+    .about-cta h2 {
+        font-size: 27px;
+        line-height: 1.3;
+    }
+
+    .about-cta p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .about-cta a {
+        width: 100%;
+        max-width: 280px;
+        padding: 13px 20px;
+        font-size: 13px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE - 400px
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .about-main {
+        padding: 45px 0;
+    }
+
+    .about-main .container,
+    .journey-section .container {
+        width: 92%;
+    }
+
+    .about-content h2 {
+        font-size: 23px;
+    }
+
+    .about-content p {
+        font-size: 13px;
+    }
+
+    .profile-box {
+        padding: 21px 17px;
+    }
+
+    .profile-box h3 {
+        font-size: 18px;
+    }
+
+    .profile-row strong {
+        font-size: 12px;
+    }
+
+    .journey-header h2 {
+        font-size: 24px;
+    }
+
+    .journey-intro {
+        padding: 24px 18px;
+    }
+
+    .journey-intro h3 {
+        font-size: 20px;
+    }
+
+    .journey-content {
+        padding: 4px 16px;
+    }
+
+    .journey-item {
+        grid-template-columns: 36px 1fr;
+        gap: 11px;
+    }
+
+    .journey-number {
+        width: 36px;
+        height: 36px;
+    }
+
+    .journey-text h4 {
+        font-size: 14px;
+    }
+
+    .journey-text p {
+        font-size: 12px;
+    }
+
+    .section-heading h2,
+    .mission-content h2 {
+        font-size: 24px;
+    }
+
+    .about-cta h2 {
+        font-size: 24px;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE - 360px
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .about-content h2 {
+        font-size: 21px;
+    }
+
+    .about-content p {
+        font-size: 12.5px;
+    }
+
+    .profile-box {
+        padding: 19px 15px;
+    }
+
+    .journey-header h2 {
+        font-size: 22px;
+    }
+
+    .journey-intro h3 {
+        font-size: 19px;
+    }
+
+    .journey-text h4 {
+        font-size: 13px;
+    }
+
+    .journey-text p {
+        font-size: 12px;
+    }
+
+    .section-heading h2,
+    .mission-content h2 {
+        font-size: 22px;
+    }
+
+    .about-cta h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .navbar {
+        position: relative;
+        z-index: 10000;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .brand {
+    order: 2;
+    flex: 1;
+    min-width: 0;
+}
+
+.nav-buttons {
+    order: 3;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.mobile-menu {
+    order: 1;
+    display: flex;
+    position: relative;
+    z-index: 10002;
+}
+
+    .call-button {
+        order: 2;
+        display: flex;
+    }
+
+    .nav-book {
+        order: 3;
+        display: flex;
+    }
+
+    /* MOBILE NAVIGATION */
+
+    .navigation {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        height: auto;
+
+        z-index: 10001;
+
+        flex-direction: column;
+        gap: 4px;
+
+        padding: 12px;
+
+        background: #ffffff;
+
+        border-radius: 0 0 14px 14px;
+
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    .navigation.show {
+        display: flex;
+    }
+
+    .navigation a {
+        display: block;
+        width: 100%;
+
+        padding: 14px 16px;
+
+        color: #053d7b;
+        background: #ffffff;
+
+        border-radius: 9px;
+
+        text-decoration: none;
+    }
+
+    .navigation a:hover,
+    .navigation a.active {
+        background: #eef8fb;
+        color: #0874c8;
+    }
+
+    /* HERO CONTENT MENU KE PEECHE RAHE */
+
+    .hero,
+    .hero-section,
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   SERVICES PAGE - MOBILE RESPONSIVE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .hero-image-section {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .hero-image-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        object-position: center;
+    }
+
+
+    /* SERVICES SECTION */
+
+    .services-main {
+        padding: 50px 0;
+    }
+
+    .services-container {
+        width: 92%;
+        max-width: 100%;
+    }
+
+
+    /* SERVICES HEADING */
+
+    .services-heading {
+        width: 100%;
+        margin: 0 auto 30px;
+    }
+
+    .services-label {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        margin-bottom: 7px;
+    }
+
+    .services-heading h2 {
+        font-size: 28px;
+        line-height: 1.25;
+        margin-bottom: 10px;
+    }
+
+    .services-heading p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* SERVICES CARDS */
+
+    .services-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 100%;
+        min-height: auto;
+        border-radius: 14px;
+    }
+
+
+    /* SERVICE IMAGE */
+
+    .service-image {
+        width: 100%;
+        height: 220px;
+    }
+
+    .service-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+
+    /* SERVICE CONTENT */
+
+    .service-content {
+        padding: 20px;
+    }
+
+    .service-content h3 {
+        font-size: 19px;
+        line-height: 1.3;
+    }
+
+    .service-line {
+        width: 32px;
+        margin: 8px 0 10px;
+    }
+
+    .service-content p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .service-content ul {
+        margin-bottom: 15px;
+    }
+
+    .service-content ul li {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 5px;
+    }
+
+
+    /* SERVICE BUTTON */
+
+    .service-btn {
+        min-height: 42px;
+        font-size: 13px;
+        border-radius: 8px;
+    }
+
+
+    /* =================================================
+       WHEN SHOULD YOU SEE A DOCTOR
+    ================================================= */
+
+    .when-doctor-section {
+        padding: 55px 0;
+    }
+
+    .when-doctor-container {
+        width: 92%;
+        max-width: 100%;
+    }
+
+    .when-doctor-heading {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .when-doctor-heading span {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .when-doctor-heading h2 {
+        font-size: 28px;
+        line-height: 1.25;
+        margin-bottom: 10px;
+    }
+
+    .when-doctor-heading p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* SYMPTOMS */
+
+    .symptoms-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .symptom-card {
+        width: 100%;
+        min-height: auto;
+        padding: 22px;
+        border-radius: 14px;
+    }
+
+    .symptom-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 14px;
+        font-size: 12px;
+    }
+
+    .symptom-card h3 {
+        font-size: 18px;
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+
+    .symptom-card p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+
+    /* =================================================
+       CTA
+    ================================================= */
+
+    .cta-section {
+        padding: 55px 0;
+    }
+
+    .cta-box {
+        width: 92%;
+        margin: 0 auto;
+        padding: 32px 22px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        border-radius: 20px;
+    }
+
+    .cta-content {
+        width: 100%;
+    }
+
+    .cta-content h2 {
+        font-size: 25px;
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+
+    .cta-content p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .cta-button {
+        width: 100%;
+        min-height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 13px 20px;
+        font-size: 13px;
+        border-radius: 9px;
+    }
+
+} /* IMPORTANT: closes 650px mobile section */
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .hero-image-section {
+        height: 280px;
+    }
+
+    .services-main {
+        padding: 25px 0 50px;
+    }
+
+    .services-heading h2 {
+        font-size: 25px;
+    }
+
+    .services-heading p {
+        font-size: 13px;
+    }
+
+    .service-image {
+        height: 200px;
+    }
+
+    .service-content {
+        padding: 18px;
+    }
+
+    .service-content h3 {
+        font-size: 18px;
+    }
+
+    .when-doctor-section {
+        padding: 48px 0;
+    }
+
+    .when-doctor-heading h2 {
+        font-size: 25px;
+    }
+
+    .symptom-card {
+        padding: 19px;
+    }
+
+    .cta-box {
+        padding: 28px 19px;
+    }
+
+    .cta-content h2 {
+        font-size: 23px;
+    }
+
+}
+
+
+/* =========================================
+   SERVICE PAGE - TABLET
+   651px - 1000px
+========================================= */
+
+@media screen and (min-width: 651px) and (max-width: 1000px) {
+
+    /* HERO - FULL IMAGE */
+
+    .hero-image-section {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .hero-image-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+
+    /* SERVICES - 2 COLUMNS */
+
+    .services-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .service-card {
+        min-height: 520px;
+    }
+
+    .service-image {
+        height: 210px;
+    }
+
+
+    /* SYMPTOMS - 2 COLUMNS */
+
+    .symptoms-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+    /* CTA */
+
+    .cta-box {
+        width: 92%;
+        margin: auto;
+        padding: 40px 35px;
+    }
+
+}
+
+
+/* ===================================================== 
+   BOOKING PAGE - ACTUAL HTML MOBILE FIX
+===================================================== */
+
+@media screen and (max-width: 650px) {
+
+    /* HERO */
+    .hero {
+        padding: 30px 0 35px;
+        overflow: visible;
+    }
+
+    /* MAIN CONTAINER */
+    .main-container {
+        width: 92%;
+        max-width: 500px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    /* LEFT CONTENT */
+    .left-side {
+        width: 100%;
+    }
+
+    .badge {
+        font-size: 10px;
+        padding: 8px 12px;
+        display: inline-flex;
+    }
+
+    .left-side h1 {
+        font-size: 31px;
+        line-height: 1.2;
+        margin-top: 15px;
+    }
+
+    .left-side h1 span {
+        display: block;
+    }
+
+    .description {
+        font-size: 13px;
+        line-height: 1.7;
+        margin-top: 12px;
+    }
+
+
+    /* =========================
+       BOOKING FORM
+    ========================= */
+
+    .booking-form {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        column-gap: 0;
+        row-gap: 15px;
+
+        min-height: auto;
+        height: auto;
+
+        margin-top: 22px;
+    }
+
+
+    /* FORM GROUP */
+    .form-group {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .form-group label {
+        display: block;
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+
+
+    /* INPUT BOX */
+    .input-area {
+        width: 100%;
+        height: 46px;
+
+        display: flex;
+        align-items: center;
+
+        padding: 0 12px;
+        gap: 9px;
+
+        border-radius: 8px;
+    }
+
+    .input-area i {
+        flex-shrink: 0;
+        font-size: 14px;
+    }
+
+    .input-area input,
+    .input-area select {
+        width: 100%;
+        min-width: 0;
+        height: 44px;
+
+        font-size: 13px;
+    }
+
+
+    /* BUTTON */
+    .button-box {
+        width: 100%;
+
+        grid-column: 1;
+        grid-row: auto;
+
+        margin-top: 3px;
+        padding: 0;
+
+        display: block;
+    }
+
+    #nextButton {
+        width: 100%;
+        height: 46px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 13px;
+        border-radius: 8px;
+    }
+
+
+    /* =========================
+       RIGHT SIDE CARDS
+    ========================= */
+
+    .right-side {
+        width: 100%;
+
+        padding-top: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .side-card {
+        width: 100%;
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+
+    /* SECURITY CARD */
+    .security-card {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .security-icon {
+        flex-shrink: 0;
+        font-size: 38px;
+    }
+
+
+    /* WHY BOOK CARD */
+    .why-card {
+        display: block;
+    }
+
+    .why-card h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .why-card p {
+        font-size: 11px;
+        margin: 7px 0;
+    }
+
+
+    /* HELP CARD */
+    .help-card {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .help-icon {
+        flex-shrink: 0;
+        font-size: 36px;
+    }
+
+    .side-card h3 {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .side-card p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+
+    /* =========================
+       PROCESS SECTION
+    ========================= */
+
+    .process-section {
+        padding: 25px 4%;
+    }
+
+    .process-box {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 18px;
+
+        padding: 20px 16px;
+        border-radius: 14px;
+    }
+
+    .process-item {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+
+        gap: 12px;
+    }
+
+    .process-icon {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+
+        font-size: 21px;
+    }
+
+    .process-item h4 {
+        font-size: 12px;
+    }
+
+    .process-item p {
+        font-size: 10px;
+        line-height: 1.5;
+        margin-top: 4px;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media screen and (max-width: 400px) {
+
+    .main-container {
+        width: 94%;
+    }
+
+    .left-side h1 {
+        font-size: 27px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .booking-form {
+        row-gap: 13px;
+    }
+
+    .input-area {
+        height: 44px;
+    }
+
+    .input-area input,
+    .input-area select {
+        height: 42px;
+        font-size: 12px;
+    }
+
+    #nextButton {
+        height: 44px;
+        font-size: 12px;
+    }
+
+    .side-card {
+        padding: 15px;
+    }
+
+    .process-box {
+        padding: 18px 14px;
+    }
+}
+
+
+
+
+
+/* =====================================================
+         contact page MOBILE
+===================================================== */
+
+@media (max-width: 950px) {
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-details {
+        max-width: 720px;
+    }
+
+    .contact-features-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .contact-appointment-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .contact-intro {
+        padding: 45px 20px 32px;
+    }
+
+    .contact-intro-inner {
+        width: 92%;
+    }
+
+    .contact-intro h1 {
+        font-size: 35px;
+    }
+
+    .contact-intro p {
+        font-size: 13px;
+    }
+
+    .contact-content {
+        padding: 45px 0 55px;
+    }
+
+    .contact-layout {
+        width: 92%;
+        gap: 35px;
+    }
+
+    .contact-details {
+        padding: 22px;
+    }
+
+    .contact-details h2 {
+        font-size: 29px;
+    }
+
+    .contact-details-text {
+        font-size: 13px;
+    }
+
+    .contact-form-card {
+        padding: 27px 21px;
+        border-radius: 14px;
+    }
+
+    .contact-form-header h2 {
+        font-size: 25px;
+    }
+
+    .contact-form-number {
+        font-size: 21px;
+    }
+
+    .contact-form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-features-container {
+        width: 92%;
+    }
+
+    .contact-map-section {
+        padding: 55px 0;
+    }
+
+    .contact-map-container {
+        width: 92%;
+    }
+
+    .contact-map-heading h2 {
+        font-size: 29px;
+    }
+
+    .contact-map-box {
+        height: 290px;
+        border-radius: 14px;
+    }
+
+    .contact-appointment {
+        padding: 50px 0;
+    }
+
+    .contact-appointment-container {
+        width: 92%;
+        padding: 30px 23px;
+        border-radius: 15px;
+    }
+
+    .contact-appointment-text h2 {
+        font-size: 24px;
+    }
+
+    .contact-appointment-button {
+        width: 100%;
+    }
+}
+
+
+
+/* MOBILE MENU ICON - DESKTOP PAR HIDE */
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    .mobile-menu {
+        display: block;
+    }
+}
+
+
